@@ -1,0 +1,11 @@
+{
+  "name": "dealfinder-basketball-ai",
+  "version": "1.0.0",
+  "description": "Real-life basketball game MVP with live camera mode, scoring, challenges, leaderboard and payout eligibility.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}

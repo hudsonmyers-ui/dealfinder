@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoops Quest AI</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>🏀 Hoops Quest AI</h1>
+      <p class="tag">Real AI vision + your camera for live basketball scoring.</p>
+
+      <section class="grid">
+        <div class="camera-card">
+          <video id="camera" autoplay playsinline muted></video>
+          <div id="popup" class="popup"></div>
+          <div class="controls">
+            <button id="start">Start Live AI Camera Mode</button>
+            <button id="stop" class="ghost">Stop</button>
+          </div>
+          <p id="aiStatus" class="status">Waiting to start…</p>
+        </div>
+
+        <aside class="panel">
+          <h2>Live Stats</h2>
+          <ul>
+            <li>Points: <strong id="points">0</strong></li>
+            <li>Makes: <strong id="makes">0</strong></li>
+            <li>Misses: <strong id="misses">0</strong></li>
+            <li>Tier: <strong id="tier">Rookie</strong></li>
+            <li>Weekly Rank: <strong id="rank">-</strong></li>
+          </ul>
+
+          <h3>Current Challenge</h3>
+          <p id="challenge">Start a session to get one.</p>
+
+          <h3>Cashout Eligibility</h3>
+          <p id="payout">Not eligible yet.</p>
+
+          <h3>Leaderboard</h3>
+          <ol id="leaderboard"></ol>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
