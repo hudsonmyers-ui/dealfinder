@@ -1,0 +1,21 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, sans-serif;
+}
+body { margin: 0; background: #0b1020; color: #e7efff; }
+main { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.tag { color: #9bb0ff; }
+.grid { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+.camera-card { position: relative; background: #121b35; border-radius: 12px; padding: 12px; }
+video { width: 100%; border-radius: 10px; min-height: 320px; object-fit: cover; background: #000; }
+.controls { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+button { border: 0; border-radius: 8px; padding: 10px 12px; background: #2e4cff; color: #fff; font-weight: 600; cursor: pointer; }
+button:hover { background: #4a64ff; }
+button.ghost { background: #2b3150; }
+button.ghost:hover { background: #3e466c; }
+.status { color: #9bb0ff; margin: 10px 2px 2px; }
+.panel { background: #121b35; border-radius: 12px; padding: 12px; }
+.panel ul { list-style: none; padding: 0; }
+.popup { position: absolute; top: 24px; left: 24px; font-size: 2rem; font-weight: 800; opacity: 0; transform: translateY(-8px); transition: all .35s; }
+.popup.show { opacity: 1; transform: translateY(0); }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
